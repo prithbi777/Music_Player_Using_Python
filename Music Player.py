@@ -6,7 +6,7 @@ print("\t              @@@@@@@@@@@@@@@@ Music Player @@@@@@@@@@@@@@@@")
 print("\n")
 print("###################### Playlist ######################")
 i = 1
-files = os.listdir("C:\\Users\\Prithbiraj\\Music\\downloaded songs")
+files = os.listdir("//media//prithbi//Prithbiraj//Python//Music_Player_Using_Python//Songs")
 for file in files:
        print(str(i)+". "+file.title())
        i += 1
@@ -20,7 +20,7 @@ while (a.lower()!="off"):
         print("\n")
         if choice.isdigit() and int(choice)<=len(files) and int(choice)>=1:
                 print(f'\t         ########## "{files[int(choice)-1].title()}"  Playing... ##########')
-                playsound("C:\\Users\\Prithbiraj\\Music\\downloaded songs\\"+files[int(choice)-1])
+                playsound("//media//prithbi//Prithbiraj//Python//Music_Player_Using_Python//Songs//"+files[int(choice)-1])
                 print('\n')
                 print("Choose What You Want Now : ")
                 print("1. On\n2. Off")
